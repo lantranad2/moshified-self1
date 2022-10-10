@@ -37,6 +37,10 @@ h3 {
   font-size: 2.8rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Blocks */
 .block {
   padding: 5rem 2rem;
@@ -79,6 +83,45 @@ h3 {
 .card__header {
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
+}
+
+/* Buttons */
+.btn {
+  text-transform: uppercase;
+  border: 0;
+  outline: 0;
+  padding: 2rem 4rem;
+  border-radius: 40px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1.8rem;
+  text-align: center;
+  transition: all 0.15s;
+}
+
+.btn--block {
+  display: inline-block;
+  width: 100%;
+}
+
+.btn--accent {
+  background-color: var(--color-accent);
+  color: var(--color-text-secondary);
+}
+
+.btn--accent:hover {
+  background-color: #dd5634;
+}
+
+.btn--outlined {
+  background-color: var(--color-text-secondary);
+  border: 2px solid var(--color-text-primary);
+  color: var(--color-text-primary);
+}
+
+.btn--outlined:hover {
+  background-color: var(--color-text-primary);
+  color: var(--color-text-secondary);
 }
 
 /* Testing */
