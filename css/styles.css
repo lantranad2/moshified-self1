@@ -278,6 +278,24 @@ a {
   margin: 0;
 }
 
+/* Quote */
+.quote {
+  color: #5c5577;
+}
+
+.quote__text {
+  font-size: 3rem;
+  font-style: italic;
+}
+
+.quote__text::before {
+  content: open-quote;
+}
+
+.quote__text::after {
+  content: close-quote;
+}
+
 /* Testing */
 .test-boder {
   border: 1px solid rgb(255, 0, 0);
