@@ -3,8 +3,8 @@
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
   --color-accent: #ff3400;
-  --color-heading-primary: #1b0760;
-  --color-heading-secondary: #fff;
+  --color-text-primary: #1b0760;
+  --color-text-secondary: #fff;
   --color-text-body: #918ca4;
 }
 
@@ -55,11 +55,41 @@ h3 {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
 }
 
+/* Cards */
+.card {
+  border-radius: 7px;
+  box-shadow: 0 0 20px 10px #f3f3f3;
+}
+
+.card--primary .card__header {
+  background: var(--color-primary);
+  color: var(--color-text-secondary);
+}
+
+.card--secondary .card__header {
+  background: var(--color-secondary);
+  color: var(--color-text-secondary);
+}
+
+.card__header,
+.card__body {
+  padding: 2rem 3rem;
+}
+
+.card__header {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
 /* Testing */
 .test-boder {
   border: 1px solid rgb(255, 0, 0);
 }
 
-.test-half-height {
-  height: 50vh;
+.test-width {
+  width: 300px;
+}
+
+.test-height {
+  height: 500px;
 }
