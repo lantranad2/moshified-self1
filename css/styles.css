@@ -37,4 +37,29 @@ h3 {
   font-size: 2.8rem;
 }
 
-/* Color Palette */
+/* Blocks */
+.block {
+  padding: 5rem 2rem;
+}
+
+.block--dark {
+  background: #000;
+  color: #7b858b;
+}
+
+.block--skewed-left {
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+}
+
+.block--skewed-right {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+}
+
+/* Testing */
+.test-boder {
+  border: 1px solid rgb(255, 0, 0);
+}
+
+.test-half-height {
+  height: 50vh;
+}
