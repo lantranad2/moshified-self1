@@ -124,6 +124,27 @@ a {
   color: var(--color-text-secondary);
 }
 
+/* Links */
+.link {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.link--accent {
+  color: var(--color-accent);
+}
+
+.link--arrow::after {
+  content: "-->";
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+.link--arrow:hover::after {
+  transform: translateX(10px);
+}
+
 /* Testing */
 .test-boder {
   border: 1px solid rgb(255, 0, 0);
