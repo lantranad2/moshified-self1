@@ -1,0 +1,28 @@
+/* Initial Setup */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
