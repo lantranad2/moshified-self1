@@ -24,6 +24,13 @@ body {
   font-family: "Inter", Arial, Helvetica, sans-serif;
   font-size: 2rem;
   line-height: 1.5;
+  color: var(--color-text-body);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-text-primary);
 }
 
 h1 {
@@ -42,9 +49,14 @@ a {
   text-decoration: none;
 }
 
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
 /* Blocks */
 .block {
-  padding: 5rem 2rem;
+  padding: 6rem 2rem;
 }
 
 .block--dark {
@@ -58,6 +70,10 @@ a {
 
 .block--skewed-right {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+}
+
+.block__header {
+  text-align: center;
 }
 
 /* Cards */
