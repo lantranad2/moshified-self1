@@ -14,6 +14,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  /* padding: 0; */
 }
 
 html {
@@ -79,6 +81,7 @@ img {
 
 .block__header {
   text-align: center;
+  margin-bottom: 4em;
 }
 
 /* Cards */
@@ -318,6 +321,23 @@ img {
 }
 
 /* Features */
+.feature {
+  gap: 4rem 2rem;
+  margin: 12rem 0;
+}
+
+.feature:first-of-type {
+  margin-top: 6rem;
+}
+
+.feature__heading {
+  margin: 1rem 0;
+}
+
+.feature__description {
+  margin-bottom: 2rem;
+}
+
 @media screen and (min-width: 768px) {
   .feature:nth-of-type(even) .feature__content {
     order: 2;
