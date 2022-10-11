@@ -53,6 +53,7 @@ a {
 }
 
 img {
+  display: block;
   width: 100%;
 }
 
@@ -199,6 +200,10 @@ img {
   background-color: #f3f9fa;
 }
 
+.icon-container--accent {
+  background: var(--color-accent);
+}
+
 .icon {
   width: 40px;
   height: 40px;
@@ -208,7 +213,7 @@ img {
   fill: var(--color-primary);
 }
 
-.icon--arrow {
+.icon--white {
   fill: var(--color-text-secondary);
 }
 
@@ -439,9 +444,36 @@ img {
   margin: 0 auto;
 }
 
+/* Testimonial */
+.testimonial {
+  padding: 3rem;
+}
+
+.testimonial__image {
+  margin: 0 3rem;
+  position: relative;
+}
+
+.testimonial .grid {
+  gap: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial__image {
+    margin: 0;
+  }
+}
+
 /* Testing */
 .test-bg {
   background-color: gold;
+}
+
+.testimonial__icon {
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  transform: translateX(50%);
 }
 
 .test-boder {
