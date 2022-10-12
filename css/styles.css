@@ -127,6 +127,15 @@ img {
   transition: all 0.15s;
 }
 
+.btn--secondary {
+  background: var(--color-secondary);
+  color: var(--color-text-secondary);
+}
+
+.btn--secondary:hover {
+  background: #05cdf0;
+}
+
 .btn--block {
   display: inline-block;
   width: 100%;
@@ -516,6 +525,39 @@ img {
 
   .block-showcase .list {
     margin-top: 1rem;
+  }
+}
+
+.callout {
+  padding: 4rem;
+  border-radius: 7px;
+}
+
+.callout--primary {
+  background: var(--color-primary);
+}
+
+.callout .grid {
+  gap: 5rem;
+}
+
+.callout .btn {
+  justify-self: center;
+  align-self: center;
+}
+
+.callout__content {
+  text-align: center;
+}
+
+.callout__heading,
+.callout__text {
+  color: var(--color-text-secondary);
+}
+
+@media screen and (min-width: 768px) {
+  .callout__content {
+    text-align: left;
   }
 }
 
