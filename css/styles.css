@@ -706,6 +706,71 @@ img {
   }
 }
 
+/* Navigation Bar */
+.nav {
+  background: #000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.nav__brand {
+  transform: translate(-12px, -4px);
+  width: 150px;
+}
+
+.nav__toggler {
+  transform: rotate(0);
+  opacity: 0.5;
+}
+
+.nav.collapsible--expanded .nav__toggler {
+  opacity: 1;
+  box-shadow: 0 0 0 3px #666;
+  border-radius: 5px;
+}
+
+.nav__list {
+  width: 100%;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.nav__item {
+  padding: 1rem 0;
+  border-bottom: 1px solid #222;
+}
+.nav__item a {
+  color: #d2d0db;
+  transition: color 0.3s;
+}
+
+.nav__item a:hover {
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__toggler {
+    display: none;
+  }
+
+  .nav__list {
+    width: auto;
+    opacity: 1;
+    max-height: 100%;
+    display: flex;
+    font-size: 1.6rem;
+  }
+
+  .nav__item {
+    border: 0;
+    padding: 1rem 2rem;
+  }
+}
+
 /* Testing */
 .test-bg {
   background-color: gold;
