@@ -161,6 +161,11 @@ img {
   color: var(--color-text-secondary);
 }
 
+.btn--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
 /* Links */
 .link {
   text-transform: uppercase;
@@ -676,6 +681,28 @@ img {
 
   .footer .collapsible__icon {
     display: none;
+  }
+}
+
+/* Hero */
+.hero__heading {
+  color: var(--color-text-secondary);
+}
+
+.hero__text {
+  font-size: 2rem;
+  color: #b9c3cf;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero .grid--1x2 {
+    align-items: center;
+  }
+
+  .hero .block__header {
+    text-align: left;
   }
 }
 
