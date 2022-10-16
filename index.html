@@ -57,7 +57,7 @@
     </section>
     <section class="block block-domain">
       <header class="block__header">
-        <h2>Starting at $10 per month</h2>
+        <h2 class="block-domain__heading">Starting at $10 per month</h2>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, quis?
         </p>
@@ -68,7 +68,12 @@
           type="text"
           placeholder="Enter domain name here..."
         />
-        <button class="btn btn--accent input-group__btn">Get started</button>
+        <button class="btn btn--accent input-group__btn">
+          <svg class="icon icon--search">
+            <use xlink:href="images/sprite.svg#search"></use>
+          </svg>
+          Search
+        </button>
       </div>
       <ul class="list block-domain__prices">
         <li><span class="badge badge--secondary">.com $9</span></li>
@@ -143,7 +148,7 @@
         </div>
       </div>
     </section>
-    <section class="block container">
+    <section class="block container block-feature">
       <header class="block__header">
         <h2 class="block_heading">Host on the Cloud to Keep Growing</h2>
         <p>
@@ -273,7 +278,7 @@
           <img src="images/ipad@2x.png" alt="" />
         </picture>
         <ul class="list">
-          <li>
+          <li class="block-showcase__item">
             <div class="media">
               <div class="media__image">
                 <svg class="icon icon--primary">
@@ -290,7 +295,7 @@
               </div>
             </div>
           </li>
-          <li>
+          <li class="block-showcase__item">
             <div class="media">
               <div class="media__image">
                 <svg class="icon icon--primary">
@@ -307,7 +312,7 @@
               </div>
             </div>
           </li>
-          <li>
+          <li class="block-showcase__item">
             <div class="media">
               <div class="media__image">
                 <svg class="icon icon--primary">
@@ -351,7 +356,7 @@
                 </svg>
               </span>
             </div>
-            <blockquote class="quote">
+            <blockquote class="quote testimonial__quote">
               <p class="quote__text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
                 eaque nam saepe incidunt tempore cupiditate qui laudantium
@@ -376,7 +381,7 @@
       </div>
     </section>
     <div class="container">
-      <div class="callout callout--primary">
+      <div class="callout callout--primary callout--signup">
         <div class="grid grid--1x2">
           <div class="callout__content">
             <h2 class="callout__heading">Ready to Get Started?</h2>
@@ -386,7 +391,7 @@
               commodi consequuntur impedit.
             </p>
           </div>
-          <a href="#" class="btn btn--secondary">Get started</a>
+          <a href="#" class="btn btn--secondary btn--stretched">Get started</a>
         </div>
       </div>
     </div>
@@ -394,7 +399,7 @@
       <div class="grid container">
         <div class="collapsible collapsible--expanded">
           <header class="collapsible__header">
-            <h3 class="collapsible__heading">PRODUCTS</h3>
+            <h3 class="collapsible__heading footer__heading">PRODUCTS</h3>
             <svg class="icon icon--arrow collapsible__icon">
               <use xlink:href="images/sprite.svg#chevron"></use>
             </svg>
@@ -407,7 +412,7 @@
         </div>
         <div class="collapsible">
           <header class="collapsible__header">
-            <h3 class="collapsible__heading">COMPANY</h3>
+            <h3 class="collapsible__heading footer__heading">COMPANY</h3>
             <svg class="icon icon--arrow collapsible__icon">
               <use xlink:href="images/sprite.svg#chevron"></use>
             </svg>
@@ -420,7 +425,7 @@
         </div>
         <div class="collapsible">
           <header class="collapsible__header">
-            <h3 class="collapsible__heading">SUPPORT</h3>
+            <h3 class="collapsible__heading footer__heading">SUPPORT</h3>
             <svg class="icon icon--arrow collapsible__icon">
               <use xlink:href="images/sprite.svg#chevron"></use>
             </svg>
@@ -433,7 +438,7 @@
         </div>
         <div class="collapsible">
           <header class="collapsible__header">
-            <h3 class="collapsible__heading">DOMAINS</h3>
+            <h3 class="collapsible__heading footer__heading">DOMAINS</h3>
             <svg class="icon icon--arrow collapsible__icon">
               <use xlink:href="images/sprite.svg#chevron"></use>
             </svg>
