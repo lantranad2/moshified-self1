@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script defer src="js/script.js"></script>
   </head>
   <body>
@@ -33,7 +34,7 @@
     </header>
     <section class="block block--dark block--skewed-left hero">
       <div class="grid grid--1x2 container">
-        <header class="block__header">
+        <header class="block__header" data-aos="zoom-in-up">
           <h1 class="hero__heading">Cloud Hosting for Pros</h1>
           <p class="hero__text">
             Deploy your websites in less than 60 seconds.
@@ -42,7 +43,7 @@
             >Get Start</a
           >
         </header>
-        <picture>
+        <picture data-aos="zoom-in">
           <source
             type="image/webp"
             srcset="images/banner.webp 1x, images/banner@2x.webp 2x"
@@ -55,7 +56,7 @@
         </picture>
       </div>
     </section>
-    <section class="block block-domain">
+    <section class="block block-domain" data-aos="zoom-in-up">
       <header class="block__header">
         <h2 class="block-domain__heading">Starting at $10 per month</h2>
         <p>
@@ -84,7 +85,7 @@
         <li>.xyz $10</li>
       </ul>
     </section>
-    <section class="block block-plans">
+    <section class="block block-plans" data-aos="fade-up">
       <div class="grid grid--1x3 container">
         <div class="plan">
           <div class="card card--secondary">
@@ -157,7 +158,7 @@
         </p>
       </header>
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-right">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#easy"></use>
@@ -170,7 +171,7 @@
           </p>
           <a href="#" class="link link--accent link--arrow">Learn more</a>
         </div>
-        <picture>
+        <picture data-aos="fade-left">
           <source
             type="image/webp"
             srcset="images/easy.webp 1x, images/easy@2x.webp 2x"
@@ -183,7 +184,7 @@
         </picture>
       </article>
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-left">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#computer"></use>
@@ -196,7 +197,7 @@
           </p>
           <a href="#" class="link link--accent link--arrow">Learn more</a>
         </div>
-        <picture>
+        <picture data-aos="fade-right">
           <source
             type="image/webp"
             srcset="images/fast.webp 1x, images/fast@2x.webp 2x"
@@ -209,7 +210,7 @@
         </picture>
       </article>
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-right">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#wordpress"></use>
@@ -222,7 +223,7 @@
           </p>
           <a href="#" class="link link--accent link--arrow">Learn more</a>
         </div>
-        <picture>
+        <picture data-aos="fade-left">
           <source
             type="image/webp"
             srcset="images/wordpress.webp 1x, images/wordpress@2x.webp 2x"
@@ -235,7 +236,7 @@
         </picture>
       </article>
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-left">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#clock"></use>
@@ -248,7 +249,7 @@
           </p>
           <a href="#" class="link link--accent link--arrow">Learn more</a>
         </div>
-        <picture>
+        <picture data-aos="fade-right">
           <source
             type="image/webp"
             srcset="images/support.webp 1x, images/support@2x.webp 2x"
@@ -266,7 +267,7 @@
         <h2 class="block__heading">User-friendly Control Panel</h2>
       </header>
       <div class="grid grid--1x2 container block-showcase__content">
-        <picture class="block-showcase__image">
+        <picture class="block-showcase__image" data-aos="fade-right">
           <source
             type="image/webp"
             srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x"
@@ -277,7 +278,7 @@
           />
           <img src="images/ipad@2x.png" alt="" />
         </picture>
-        <ul class="list">
+        <ul class="list" data-aos="fade-up">
           <li class="block-showcase__item">
             <div class="media">
               <div class="media__image">
@@ -332,7 +333,7 @@
         </ul>
       </div>
     </section>
-    <section class="block block-testimonial">
+    <section class="block block-testimonial" data-aos="zoom-in">
       <div class="block__header">
         <h2>What our Customers are Saying</h2>
         <p>
@@ -455,5 +456,9 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
